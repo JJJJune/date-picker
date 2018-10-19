@@ -1,0 +1,73 @@
+@import 'styles/mixins';
+
+.clsprefix-monthview-header {
+  @include flex-align-center();
+
+  justify-content: space-between;
+  height: 26px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 20px;
+}
+.clsprefix-monthview-header-label {
+  @include flex-align-center();
+
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.clsprefix-monthview-row {
+  @include flex-align-center();
+
+  justify-content: space-between;
+  height: 28px;
+  padding: 0 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+.clsprefix-monthview-cell {
+  @include flex-align-center();
+
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.clsprefix-monthview-cell-selected {
+  background: #d7edff;
+}
+.clsprefix-monthview-cell-selectedstart {
+  color: #fff;
+  background: #1464bf;
+}
+.clsprefix-monthview-foot {
+  @include flex-align-center();
+
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 46px;
+  font-size: 12px;
+  font-weight: 500;
+  div {
+    @include flex-align-center();
+
+    justify-content: center;
+    height: 24px;
+    width: 36px;
+    color: rgba(0, 0, 0, 0.38);
+    border-radius: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .selected {
+    background: #f2f2f2;
+    color: #1464bf;
+  }
+}

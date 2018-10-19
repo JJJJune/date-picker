@@ -1,0 +1,18 @@
+.clsprefix-datepicker {
+  background: #fff;
+  position: absolute;
+  width: 290px;
+  font-family: 'Roboto Regular', Roboto, serif;
+}
+.clsprefix-datepicker-disVisible {
+  display: none;
+}
+.clsprefix-datepicker-foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 46px;
+}
+.clsprefix-datepicker-foot-btn {
+  color: rgba(0, 0, 0, 0.38) !important;
+}

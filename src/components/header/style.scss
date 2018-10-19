@@ -1,0 +1,29 @@
+@import 'styles/mixins';
+
+.clsprefix-daterange {
+  @include flex-align-center();
+
+  flex-direction: row;
+  height: 52px;
+  margin: 0 20px;
+  .md-btn--text {
+    padding: 0;
+    font-size: 12px;
+  }
+}
+.clsprefix-daterange-reset {
+  @include flex-align-center();
+
+  justify-content: space-between;
+  width: 50px;
+  color: #3e50b4;
+  &:hover {
+    cursor: pointer;
+  }
+  .md-icon {
+    font-size: 16px;
+  }
+}
+.clsprefix-daterange-reset-label {
+  margin-left: 5px;
+}

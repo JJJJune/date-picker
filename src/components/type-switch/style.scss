@@ -1,0 +1,31 @@
+@import 'styles/mixins';
+
+.clsprefix-typeswitch {
+  @include flex-align-center();
+
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.clsprefix-type {
+  @include flex-align-center();
+
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.38);
+  &--active {
+    color: white;
+    background: #3e50b4;
+    border: none;
+  }
+}

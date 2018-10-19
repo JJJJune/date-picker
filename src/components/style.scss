@@ -1,0 +1,19 @@
+.clsprefix {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.38);
+}
+.clsprefix-datepickerinput {
+  position: relative;
+}
+.clsprefix-datepickerinput-label {
+  font-weight: 400;
+  color: #1464bf;
+  min-width: 150px;
+  margin-left: 5px;
+  margin-right: 40px;
+}
+.clsprefix-datepickerinput-calendar {
+  position: absolute;
+  right: 0;
+}

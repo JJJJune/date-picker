@@ -1,0 +1,25 @@
+@import 'styles/mixins';
+
+.clsprefix-calendar-header {
+  @include flex-align-center();
+
+  justify-content: space-between;
+  height: 26px;
+  color: #1464bf;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+  .md-btn--icon {
+    height: 21px;
+    width: 21px;
+    padding: 0;
+  }
+}
+.clsprefix-calendar-arrow {
+  height: 21px;
+  width: 21px;
+  color: rgba(0, 0, 0, 0.54);
+}

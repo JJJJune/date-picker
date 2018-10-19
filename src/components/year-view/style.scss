@@ -1,0 +1,51 @@
+@import 'styles/mixins';
+
+.clsprefix-yearview-years {
+  overflow-y: auto;
+  height: 195px;
+}
+.clsprefix-yearview-row {
+  display: flex;
+  height: 60px;
+}
+.clsprefix-yearview-cell {
+  @include flex-align-center();
+
+  justify-content: center;
+  height: 60px;
+  width: 72.5px;
+  color: rgba(0, 0, 0, 0.38);
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.clsprefix-yearview-cell-selected {
+  color: #1464bf;
+  background: #f2f2f2;
+}
+.clsprefix-yearview-foot {
+  @include flex-align-center();
+
+  justify-content: center;
+  height: 46px;
+  font-size: 12px;
+  font-weight: 500;
+  div {
+    @include flex-align-center();
+
+    justify-content: center;
+    height: 24px;
+    width: 36px;
+    color: rgba(0, 0, 0, 0.38);
+    border-radius: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .selected {
+    background: #f2f2f2;
+    color: #1464bf;
+  }
+}
